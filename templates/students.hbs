@@ -1,0 +1,16 @@
+<ul class="people_list">
+  {{#each students}}
+    <li>
+      <p>{{name}}</p>
+      <p>{{surname}}</p>
+      <p>{{age}}</p>
+      <p>{{groupe}}</p>
+      <p>{{faculty}}</p>
+      <ul>
+        {{#each subjects}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+    </li>
+  {{/each}}
+</ul>
